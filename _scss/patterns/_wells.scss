@@ -1,0 +1,16 @@
+
+/* ==========================================================================
+    WELLS
+   ========================================================================== */
+
+.well {
+	background: $brand-background;
+	border: 1px solid $border-color;
+    border-radius: $brand-radius;
+    padding: spacer(4);
+	@include box-shadow(0 0 2px 1px rgba(0, 0, 0, 0.025));
+
+	.form-control {
+		background: $body-background;
+	}
+}

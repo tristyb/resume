@@ -1,0 +1,173 @@
+
+// A modular scale generates harmonious font sizes and baseline height: http://modularscale.com/
+// Don't change these variables!
+$minor-second: 1.067;
+$major-second: 1.125;
+$minor-third: 1.2;
+$major-third: 1.25;
+$perfect-fourth: 1.333;
+$augmented-fourth: 1.414;
+$perfect-fifth: 1.5;
+$minor-sixth: 1.6;
+$golden-section: 1.618;
+$major-sixth: 1.667;
+$minor-seventh: 1.778;
+$major-seventh: 1.875;
+$octave: 2;
+$major-tenth: 2.5;
+$major-eleventh: 2.667;
+$major-twelfth: 3;
+$double-octave: 4;
+
+$scale:                 $perfect-fourth !default; // Our scale factor for font sizing
+
+// ==========================================================================
+//  ROOT RULES
+// ==========================================================================
+
+// Root element colours.
+$root-color:            rgb(42,42,42) !default;
+$root-background:       rgb(242,242,242) !default;
+
+// Also set body to allow faux footers.
+$body-background:       rgb(255,255,255) !default;
+
+// Default font-size.
+$root-size:             16px !default; // Set in px, it will be converted to ems.
+
+// Set leading.
+$root-lineheight:       $perfect-fifth !default; // Unitless value, doesn't have to be the same as $scale.
+$show-baseline:         true !default; // A visual guide to help correct baseline.
+$show-wireframe:        true !default;
+$cap-height: 		    0.62; // A unitless value, relative to 1em, that varies by font.
+
+// Here are some local fonts cap-height sizes to get you started:
+// Georgia: 0.66
+// Times / Times New Roman: 0.65
+// Palatino: 0.52
+// Lucida Grande: 0.72
+// Helvetica: 0.65
+// Verdana: 0.76
+// Tahoma: 0.76
+
+// Selection of Typekit fonts cap-height sizes:
+// Proxima Nova: 0.57
+// Museo Slab: 0.66
+// JAF Facit: 0.7
+// Brandon Grotesque: 0.65
+// Clavo: 0.7
+// Adelle: 0.66
+// FF Tisa Pro: 0.82
+// Jubilat: 0.66
+// Futura PT: 0.66
+// Chaparral Pro: 0.5
+// Minion Pro: 0.66
+// Myriad Pro: 0.66
+// Adobe Caslon Pro: 0.36
+// Omnes Pro 0.78
+
+
+// Default font-weight.
+$root-weight:           400 !default;
+
+// Constrain content widths to maintain an optimal measure.
+$wrapper-width:         64em !default;
+$wrapper-width-narrow:  35em !default;
+
+
+// ==========================================================================
+//  DEFAULT FONT STACKS
+// ==========================================================================
+
+// Our font stacks
+$sans-family:           sans-serif !default;
+$serif-family:          serif !default;
+$code-font-family:      monospace !default;
+
+// Project element stacks
+$root-family:           $sans-family !default;
+$button-family:         $sans-family !default;
+$heading-family:        $sans-family !default;
+
+// Enable OpenType font features? Inspired by: https://github.com/kennethormandy/normalize-opentype.css
+$opentype:              true !default;
+
+// ==========================================================================
+//  BRANDING
+// ==========================================================================
+
+// Brand palette
+$brand-color:           rgb(86, 148, 241) !default; // We'll spin a pallette from this
+
+// Triadic color scheme? Go!
+$primary-color:         $brand-color !default;
+$complement-color:      adjust_hue($brand-color, 180) !default;
+$secondary-color: 	    adjust_hue($brand-color, 120) !default;
+$tertiary-color: 	    adjust_hue($brand-color, -120) !default;
+
+// UI elements colours, used in badges, buttons, labels, etc.
+$brand-alert: 	        rgb(252,248,227) !default;
+$brand-danger:          rgb(217,83,79) !default;
+$brand-info:            rgb(91,192,222) !default;
+$brand-primary:   	    rgb(50,118,177) !default;
+$brand-success:         rgb(92,184,92) !default;
+$brand-warning:	        rgb(240,173,78) !default;
+
+// Default colour for objects and borders.
+$brand-background:      rgb(252,252,255) !default;
+$input-background:      rgb(255,255,255) !default; // form inputs
+$pre-background:        rgb(248,248,255) !default;
+
+// Borders
+$border-color:          rgb(222,222,222) !default;
+
+// The default size of rounded corners.
+$brand-radius:          .25em !default;
+$button-radius:         .25em !default;
+
+
+// ==========================================================================
+//  LINKS
+// ==========================================================================
+
+// Link colours.
+$link-color:            $brand-color !default;
+$link-color-hover:      darken($link-color, 10%) !default;
+$link-color-visited:    darken($link-color, 10%) !default;
+
+
+// ==========================================================================
+//  HEADINGS
+// ==========================================================================
+
+// Heading weight
+$heading-weight:        700 !default;
+
+// Heading color
+$heading-color:         $root-color !default;
+
+
+// ==========================================================================
+//  TYPOGRAPHY
+// ==========================================================================
+
+$strong-weight:         700 !default; // The font-weight used for <b> and <strong> elements.
+
+// Paragraph settings
+$paragraph-indent:      false !default; // Get classy?
+$paragraph-justify:     false !default;
+
+// Default quote marks.
+$open-quote:            \201C !default; // If you're French you'll want to change these.
+$close-quote:           \201D !default;
+
+
+// ==========================================================================
+//  BREAKPOINTS
+// ==========================================================================
+
+// Specifying breakpoints in ems accounts changes in content size.
+$sm:                    30em !default;
+$md:                    45em !default;
+$lg:                    64em !default;
+$xl:                    90em !default;

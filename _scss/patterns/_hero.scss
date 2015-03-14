@@ -1,0 +1,55 @@
+/* ==========================================================================
+    HERO
+   ========================================================================== */
+
+// Displays big text, on a colored background, with padding.
+.hero {
+	position: relative;
+	z-index: 1;
+
+	.lede {
+
+		@include font-size($scale-up1, none);
+
+		@include mq(sm) {
+			@include font-size($scale-up2, none);
+		}
+
+		@include mq(md) {
+			@include font-size($scale-up4, none);
+		}
+
+		@include mq(lg) {
+			@include font-size($scale-up5, none);
+		}
+	}
+
+	.sub {
+
+		@include mq(sm) {
+			@include font-size($scale-up1);
+		}
+
+		@include mq(lg) {
+			@include font-size($scale-up2);
+		}
+	}
+
+	// Reversed text hero helper, for use on dark backgrounds or over dark images.
+	&-reversed {
+		color: $body-background !important;
+	}
+
+	// Displays big text, with padding, centered over an image.
+	&-image {
+		@extend .hero;
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+
+		img {
+			@extend .margin-off;
+			width: 100%;
+		}
+	}
+}

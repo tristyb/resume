@@ -195,7 +195,7 @@ html, body {
 /* Style the body element styles. */
 body {
   background: white;
-  font: 400 1em/1.5 sans-serif;
+  font: 400 1em/1.5 "Georgia", serif;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -316,7 +316,7 @@ progress, meter {
    ========================================================================== */
 h1, .alpha, h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
   color: #2a2a2a;
-  font-family: sans-serif;
+  font-family: 'Libre Baskerville', serif;
   font-weight: 700;
   -webkit-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
   -moz-font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
@@ -3289,17 +3289,8 @@ label.hasTooltip {
       vertical-align: middle; } }
 
 .logo {
-  background: url(../img/logo.png) no-repeat;
-  background-size: 90px;
   display: inline-block;
-  height: 90px;
-  vertical-align: middle;
-  width: 90px;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0; }
+  vertical-align: middle; }
 
 /* ==========================================================================
     MAIN

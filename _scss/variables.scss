@@ -39,7 +39,7 @@ $root-size:             16px !default; // Set in px, it will be converted to ems
 $root-lineheight:       $perfect-fifth !default; // Unitless value, doesn't have to be the same as $scale.
 $show-baseline:         true !default; // A visual guide to help correct baseline.
 $show-wireframe:        true !default;
-$cap-height: 		    0.62; // A unitless value, relative to 1em, that varies by font.
+$cap-height: 		    0.66; // A unitless value, relative to 1em, that varies by font.
 
 // Here are some local fonts cap-height sizes to get you started:
 // Georgia: 0.66
@@ -81,13 +81,13 @@ $wrapper-width-narrow:  35em !default;
 
 // Our font stacks
 $sans-family:           sans-serif !default;
-$serif-family:          serif !default;
+$serif-family:          "Georgia", serif !default;
 $code-font-family:      monospace !default;
 
 // Project element stacks
-$root-family:           $sans-family !default;
+$root-family:           $serif-family !default;
 $button-family:         $sans-family !default;
-$heading-family:        $sans-family !default;
+$heading-family:        'Libre Baskerville', serif !default;
 
 // Enable OpenType font features? Inspired by: https://github.com/kennethormandy/normalize-opentype.css
 $opentype:              true !default;

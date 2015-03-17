@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+{% include head.html %}
+<body>
+    <div class="header-row">
+        <div class="wrapper">
+            <div class="content">
+                <div class="logo-block">
+                    <h1 class="logo">Tristan Brookes</h1>
+                    <p class="job-title">Front-end Developer</p>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <div class="main-row">
+        <div class="wrapper">
+            <main class="content" role="main">
+                {{ content }}
+            </main>
+        </div>
+    </div>
     {% include footer.html %}
-
-  </body>
-
+</body>
 </html>

@@ -2,22 +2,78 @@
 layout: default
 ---
 
-<div class="home">
+<section class="profile">
+    <h2>Profile</h2>
+    <p>I'm a freelance front-end developer. I've been making websites for about 3 and a half years now as a freelancer and at agencies. I enjoy using responsive technologies and Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...</p>
+</section>
 
-  <h1 class="page-heading">Posts</h1>
+<section class="experience">
+    <h2>Experience</h2>
+    <div class="job">
+        <h3>Front-end Developer - Webhaus</h3>
+        <p class="timescale">Mar 2015 - Present</p>
+        <p class="about">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.</p>
+    </div>
+    <div class="job">
+        <h3>Front-end Developer - Code 7</h3>
+        <p class="timescale">Jan 2012 - Feb 2015</p>
+        <p class="about">Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
+    <div class="job">
+        <h3>Front-end Developer - Freelance</h3>
+        <p class="timescale">March 2011 - Jan 2012</p>
+        <p class="about">Maecenas sed diam eget risus varius blandit sit amet non magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section class="education">
+    <h2>Education</h2>
+    <div class="institution">
+        <h3>University of Brighton - Computer Science (Games) BSc w/ Hons</h3>
+        <p class="grade">2:1 Hons</p>
+        <p class="timescale">2007 - 2010</p>
+    </div>
+</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="works-with">
+    <h2>Works with</h2>
+    <ul>
+        <li>Sass</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>HTML</li>
+        <li>PHP</li>
+        <li>Liquid</li>
+        <li>Jekyll</li>
+        <li>Joomla</li>
+        <li>Craft</li>
+        <li>WordPress</li>
+        <li>Grunt</li>
+    </ul>
+</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<section class="software">
+    <h2>Software</h2>
+    <ul>
+        <li>Atom / Sublime Text</li>
+        <li>Git / Github / Bitbucket</li>
+        <li>Photoshop / Illustrator</li>
+        <li>Terminal</li>
+        <li>OS X / Windows</li>
+    </ul>
+</section>
 
-</div>
+<section class="contact">
+    <h2>Contact</h2>
+    <p class="address">
+        <span>29 Bonaventure, Sussex Wharf, </span>
+        <span>Shoreham Beach</span>
+        <span>Shoreham-by-Sea</span>
+        <span>West Sussex</span>
+        <span>BN43 5BH</span>
+    </p>
+    <p class="tel"><strong>Tel:</strong> +44 (0) 7879 272029</p>
+    <p class="email"><strong>Email:</strong> <a href="mailto:tristan@webhaus.co.uk">tristan@webhaus.co.uk</a></p>
+    <p class="website"><strong>Web:</strong> <a href="https://www.webhaus.co.uk">https://www.webhaus.co.uk</a></p>
+</section>

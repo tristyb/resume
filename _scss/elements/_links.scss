@@ -19,6 +19,12 @@ a {
     }
 }
 
+p{
+    a{
+        text-decoration: underline;
+    }
+}
+
 .to-top{
     background: $brand-color;
     position: fixed;

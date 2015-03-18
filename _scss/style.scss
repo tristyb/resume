@@ -50,7 +50,6 @@
 /* VENDOR */
 /* ========================================================================== */
 // Any CSS targetting third-party code.
-@import "vendor/font-awesome";
 
 
 /* PATTERNS */
@@ -58,50 +57,20 @@
 //
 // The following are re-usable 'objects' that bring recurring CSS patterns
 // into discrete and easily maintainable modules.
-@import "patterns/alerts";
-@import "patterns/breadcrumb";
-@import "patterns/bs-forms"; // Extend BS3-type styles to BS2 flavour markup.
-@import "patterns/bs-dropdowns"; // Not planning on menu drop-downs? Comment this out and save!
-@import "patterns/buttons";
-@import "patterns/container";
-@import "patterns/close"; // Specific to certain frameworks.
-@import "patterns/forms";
-@import "patterns/gists";
-@import "patterns/grid"; // Best advice? Comment this out and amke your own damn grid. Grid syntax always adds a merry ton o css that you probably won't use.
-@import "patterns/hero";
 @import "patterns/images";
-@import "patterns/input-groups";
-@import "patterns/labels";
-@import "patterns/lists";
-@import "patterns/media";
-@import "patterns/nav";
-@import "patterns/overlays";
-@import "patterns/pagination";
-@import "patterns/pills";
-@import "patterns/readmore";
-@import "patterns/responsive-tables";
 @import "patterns/section";
-@import "patterns/tables";
-@import "patterns/tabs";
-@import "patterns/tooltips";
 @import "patterns/wells";
 @import "patterns/wrapper";
-
+@import "patterns/profile";
+@import "patterns/experience";
 
 /* SECTIONS */
 /* ========================================================================== */
 // Document-level structural elements and specific page regions.
-@import "sections/above";
-@import "sections/banner";
-@import "sections/below";
-@import "sections/bottom";
-@import "sections/breadcrumbs";
-@import "sections/complementary";
 @import "sections/footer";
 @import "sections/header";
 @import "sections/logo";
 @import "sections/main";
-@import "sections/navigation";
 
 /* VIEWS */
 /* ========================================================================== */

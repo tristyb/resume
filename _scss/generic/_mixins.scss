@@ -342,3 +342,8 @@ $baseline-distance: ($root-lineheight - $cap-height) / 2;
         margin-top: spacer($spacer, $font-size);
     }
 }
+
+@mixin border-bottom{
+    border-bottom: 4px solid $border-color;
+    padding-bottom: spacer(4);
+}

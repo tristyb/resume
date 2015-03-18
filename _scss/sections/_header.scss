@@ -3,15 +3,19 @@
     HEADER
    ========================================================================== */
 
-[role="banner"] {
-
-    text-align: center;
-
-    @include mq(md) {
-        text-align: left;
-    }
-}
-
 .header-row {
+    .content{
+        padding-top: spacer(4);
+    }
 
+    .job-title{
+        margin-top: 0;
+        // text-transform: uppercase;
+        font-size: 1.125em;
+        transition: font-size .3s ease-in-out;
+
+        @include mq(sm){
+            font-size: 1.375em;
+        }
+    }
 }

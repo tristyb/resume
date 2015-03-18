@@ -26,7 +26,7 @@ $scale:                 $perfect-fourth !default; // Our scale factor for font s
 // ==========================================================================
 
 // Root element colours.
-$root-color:            rgb(42,42,42) !default;
+$root-color:            #444444 !default;
 $root-background:       rgb(242,242,242) !default;
 
 // Also set body to allow faux footers.
@@ -37,8 +37,8 @@ $root-size:             16px !default; // Set in px, it will be converted to ems
 
 // Set leading.
 $root-lineheight:       $perfect-fifth !default; // Unitless value, doesn't have to be the same as $scale.
-$show-baseline:         true !default; // A visual guide to help correct baseline.
-$show-wireframe:        true !default;
+$show-baseline:         false !default; // A visual guide to help correct baseline.
+$show-wireframe:        false !default;
 $cap-height: 		    0.66; // A unitless value, relative to 1em, that varies by font.
 
 // Here are some local fonts cap-height sizes to get you started:
@@ -72,7 +72,7 @@ $root-weight:           400 !default;
 
 // Constrain content widths to maintain an optimal measure.
 $wrapper-width:         64em !default;
-$wrapper-width-narrow:  35em !default;
+$wrapper-width-narrow:  45em !default;
 
 
 // ==========================================================================
@@ -80,14 +80,14 @@ $wrapper-width-narrow:  35em !default;
 // ==========================================================================
 
 // Our font stacks
-$sans-family:           sans-serif !default;
-$serif-family:          "Georgia", serif !default;
+$sans-family:           "Open Sans", sans-serif !default;
+$serif-family:          "Gentium Basic", serif !default;
 $code-font-family:      monospace !default;
 
 // Project element stacks
 $root-family:           $serif-family !default;
 $button-family:         $sans-family !default;
-$heading-family:        'Libre Baskerville', serif !default;
+$heading-family:        $sans-family !default;
 
 // Enable OpenType font features? Inspired by: https://github.com/kennethormandy/normalize-opentype.css
 $opentype:              true !default;
@@ -97,21 +97,13 @@ $opentype:              true !default;
 // ==========================================================================
 
 // Brand palette
-$brand-color:           rgb(86, 148, 241) !default; // We'll spin a pallette from this
+$brand-color:           #9b59b6 !default; // We'll spin a pallette from this
 
 // Triadic color scheme? Go!
 $primary-color:         $brand-color !default;
 $complement-color:      adjust_hue($brand-color, 180) !default;
 $secondary-color: 	    adjust_hue($brand-color, 120) !default;
 $tertiary-color: 	    adjust_hue($brand-color, -120) !default;
-
-// UI elements colours, used in badges, buttons, labels, etc.
-$brand-alert: 	        rgb(252,248,227) !default;
-$brand-danger:          rgb(217,83,79) !default;
-$brand-info:            rgb(91,192,222) !default;
-$brand-primary:   	    rgb(50,118,177) !default;
-$brand-success:         rgb(92,184,92) !default;
-$brand-warning:	        rgb(240,173,78) !default;
 
 // Default colour for objects and borders.
 $brand-background:      rgb(252,252,255) !default;
@@ -144,7 +136,7 @@ $link-color-visited:    darken($link-color, 10%) !default;
 $heading-weight:        700 !default;
 
 // Heading color
-$heading-color:         $root-color !default;
+$heading-color:         lighten($brand-color, 10%) !default;
 
 
 // ==========================================================================

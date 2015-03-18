@@ -12,6 +12,7 @@ h6, .zeta {
     color: $heading-color;
     font-family: $heading-family;
     font-weight: $heading-weight;
+    text-transform: uppercase;
 
     @if $opentype == true {
         // Turn on discretionary ligatures for larger headings

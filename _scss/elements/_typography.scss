@@ -8,6 +8,7 @@ p {
     orphans: 3;
     widows: 3;
     word-wrap: break-word;
+    font-size: 1.125em;
 
     @include hyphens;
 

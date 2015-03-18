@@ -3,15 +3,14 @@
    Site logo
    ========================================================================== */
 
-.logo-block {
-    display: inline-block;
-
-    @include mq(md) {
-        vertical-align: middle;
-    }
-}
-
 .logo {
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
+    color: $brand-color;
+    text-transform: uppercase;
+    line-height: 1;
+    transition: font-size .3s ease-in-out;
+
+    @include mq(sm){
+        font-size: 3em;
+    }
 }

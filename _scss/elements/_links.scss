@@ -18,3 +18,26 @@ a {
         color: darken($link-color-hover, 10%);
     }
 }
+
+.to-top{
+    background: $brand-color;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    @include font-size(1.25em);
+    color: #fff;
+    width: 2em;
+    height: 2em;
+    padding: 0.5em 0;
+    font-family: $sans-family;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: transform .5s ease-in-out, background .5s ease-in-out;
+
+    &:hover, &:focus{
+        transform: scale(1.2);
+        color: #fff;
+        background: lighten($brand-color, 10%);
+    }
+}

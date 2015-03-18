@@ -48,7 +48,7 @@ h2,
 
 h3,
 .gamma {
-    @include font-size($scale-up1);
+    @include font-size($scale-up2);
 
     @include mq(lg) {
         @include font-size($scale-up2);

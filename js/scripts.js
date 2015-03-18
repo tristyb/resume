@@ -16,23 +16,10 @@ jQuery(document).ready(function(){
 	// Touch? Screen type?
 	jQuery().deviceHooks();
 
-  // Checks if article images and videos have figure tags and adds them if not
-  jQuery(function figtarget() {
-     figtag(".article-content img");
-  });
-
-  function figtag(theElement) {
-    jQuery(theElement).each(function(){
-    if (!jQuery(this).parent().is("figure")) {
-        jQuery(this).wrap("<figure>");
-    }
-    });
-  }
-
 // Scroll to top
     jQuery(function () {
     var scrollDiv = document.createElement("a");
-    jQuery(scrollDiv).attr("class", "to-top").appendTo("body").attr("title", "Click here to soar gracefully upwards like an eagle!").text("^");
+    jQuery(scrollDiv).attr("class", "to-top").appendTo("body").attr("title", "Click here to head back to the top").text("^");
 jQuery(".to-top").fadeOut();
     jQuery(window).scroll(function () {
         if (jQuery(this).scrollTop() !== 0) {

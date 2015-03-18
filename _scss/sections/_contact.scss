@@ -1,0 +1,30 @@
+.address{
+	span{
+		display: block;
+		margin-top: 0;
+	}
+
+	@include mq(sm){
+		width: 50%;
+		display: inline-block;
+		margin-right: -0.25em;
+		vertical-align: middle;
+	}
+}
+
+.contact-methods{
+	p{
+		margin-top: 0;
+	}
+
+	@include mq(sm){
+		width: 50%;
+		display: inline-block;
+		margin-right: -0.25em;
+		vertical-align: middle;
+	}
+}
+
+.contact{
+	padding-bottom: spacer(4);
+}

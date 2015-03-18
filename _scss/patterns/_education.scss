@@ -1,0 +1,22 @@
+.education{
+	@include border-bottom;
+
+	.institution{
+		h3{
+			line-height: 1.2;
+		}
+
+		h3 span{
+			font-size: 0.65em;
+			display: block;
+			color: desaturate($heading-color, 20%);
+			line-height: 1.4;
+		}
+
+		.timescale{
+			margin-top: spacer(1);
+			font-size: 0.85em;
+			color: lighten($root-color, 10%);
+		}
+	}
+}

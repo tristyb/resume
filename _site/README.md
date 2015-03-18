@@ -1,1 +1,0 @@
-My online resume. Cool.

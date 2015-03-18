@@ -6,3 +6,18 @@ email: tristan@webhaus.co.uk
 
 # Build settings
 markdown: kramdown
+exclude: [
+	'.git',
+	'.DS_Store',
+	'.gitignore',
+	'config.codekit',
+	'README.md',
+	'_scss',
+  	'.sass-cache',
+  	'package.json',
+  	'Gruntfile.js',
+  	'node_modules',
+  	'js/build/production.js',
+  	'js/scripts.js',
+  	'js/plugins.js'
+	]

@@ -33,17 +33,9 @@
 // elements, like <body>, <table>. <header>, <footer> and
 // <main> are too generic and included as sections, below.
 @import "elements/root";
-@import "elements/articles";
-@import "elements/code";
-@import "elements/figures";
-@import "elements/forms";
 @import "elements/headings";
-@import "elements/images";
 @import "elements/links";
 @import "elements/lists";
-@import "elements/nav";
-@import "elements/rules";
-@import "elements/tables";
 @import "elements/typography";
 
 
@@ -58,8 +50,6 @@
 // The following are re-usable 'objects' that bring recurring CSS patterns
 // into discrete and easily maintainable modules.
 @import "patterns/images";
-@import "patterns/section";
-@import "patterns/wells";
 @import "patterns/wrapper";
 @import "patterns/profile";
 @import "patterns/experience";
@@ -69,7 +59,6 @@
 /* SECTIONS */
 /* ========================================================================== */
 // Document-level structural elements and specific page regions.
-@import "sections/footer";
 @import "sections/header";
 @import "sections/logo";
 @import "sections/main";

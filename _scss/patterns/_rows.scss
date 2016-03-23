@@ -6,3 +6,7 @@
 [class*="-row"] {
 	@extend .margin-off;
 }
+
+.main-row main{
+	padding-top: spacer(2);
+}

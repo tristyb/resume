@@ -37,3 +37,7 @@ li {
         padding-left: spacer();
      }
 }
+
+h2 + ul{
+	margin-top: spacer(2);
+}

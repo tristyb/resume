@@ -144,3 +144,7 @@ b,
 strong {
   font-weight: $strong-weight;
 }
+
+h2 + .intro{
+	margin-top: spacer(2);
+}

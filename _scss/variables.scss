@@ -68,7 +68,7 @@ $cap-height: 		    0.66; // A unitless value, relative to 1em, that varies by fo
 
 
 // Default font-weight.
-$root-weight:           400 !default;
+$root-weight:           300 !default;
 
 // Constrain content widths to maintain an optimal measure.
 $wrapper-width:         64em !default;
@@ -80,8 +80,8 @@ $wrapper-width-narrow:  45em !default;
 // ==========================================================================
 
 // Our font stacks
-$sans-family:           "Open Sans", sans-serif !default;
-$serif-family:          "Gentium Basic", serif !default;
+$sans-family:           "Lato", sans-serif !default;
+$serif-family:          "Merriweather", serif !default;
 $code-font-family:      monospace !default;
 
 // Project element stacks

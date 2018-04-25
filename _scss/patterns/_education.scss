@@ -9,7 +9,7 @@
 		h3 span{
 			font-size: 0.65em;
 			display: block;
-			color: desaturate($heading-color, 20%);
+			color: $heading-color;
 			line-height: 1.4;
 		}
 

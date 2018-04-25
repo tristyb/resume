@@ -87,7 +87,7 @@ $code-font-family:      monospace !default;
 // Project element stacks
 $root-family:           $serif-family !default;
 $button-family:         $sans-family !default;
-$heading-family:        $sans-family !default;
+$heading-family:        $serif-family !default;
 
 // Enable OpenType font features? Inspired by: https://github.com/kennethormandy/normalize-opentype.css
 $opentype:              true !default;
@@ -97,7 +97,7 @@ $opentype:              true !default;
 // ==========================================================================
 
 // Brand palette
-$brand-color:           #9b59b6 !default; // We'll spin a pallette from this
+$brand-color:           #36d7b7 !default; // We'll spin a pallette from this
 
 // Triadic color scheme? Go!
 $primary-color:         $brand-color !default;

@@ -36,7 +36,7 @@ p {
 /* Typically used in the first paragraph of an article, for added awesome. */
 .intro {
     @extend .muted;
-    @include font-size($scale-up1);
+    // @include font-size($scale-up2);
 }
 
 /* BLOCK QUOTES */

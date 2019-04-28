@@ -14,9 +14,16 @@
 @import "elements/elements.headings";
 
 // OBJECTS
+@import "objects/objects.section-title";
 @import "objects/objects.wrapper";
 
 // COMPONENTS
+@import "components/components.contact";
+@import "components/components.education";
+@import "components/components.experience";
+@import "components/components.header";
+@import "components/components.profile";
+@import "components/components.skills";
 
 // UTILITIES
 @import "utilities/utilities.helpers";

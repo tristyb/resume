@@ -1,0 +1,35 @@
+.u-push {
+  margin-top: rem(24px);
+
+  &--big {
+    margin-top: rem(36px);
+  }
+}
+
+.u-bottom {
+  padding-bottom: rem(24px);
+
+  @include mq($from: tablet) {
+    padding-bottom: rem(36px);
+  }
+}
+
+.u-wdd {
+  color: $color--wdd;
+}
+
+.u-freelance {
+  color: $color--primary;
+}
+
+.u-rc {
+  color: $color--rc;
+}
+
+.u-wh {
+  color: $color--webhaus;
+}
+
+.u-c7 {
+  color: $color--code7;
+}

@@ -1,0 +1,45 @@
+.c-education {}
+
+  .c-education__title {}
+
+  .c-education__institution {
+    + .c-education__institution {
+      margin-top: rem(32px);
+    }
+  }
+
+    .c-education__institution__title {
+      color: $color--text;
+      margin-bottom: rem(6px);
+
+      @include mq($from: tablet) {
+        font-size: rem(22px);
+      }
+    }
+
+    .c-education__institution__degree {
+      font-size: .75em;
+
+      @include mq($until: desktop) {
+        display: block;
+        font-size: .875em;
+      }
+    }
+
+    .c-education__institution__timescale {
+      color: $color--grey;
+      margin: 0;
+      font-size: rem(14px);
+
+      @include mq($from: tablet) {
+        font-size: rem(16px);
+      }
+    }
+
+    .c-education__institution__about {
+      font-size: rem(16px);
+
+      @include mq($from: tablet) {
+        font-size: rem(18px);
+      }
+    }

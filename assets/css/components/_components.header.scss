@@ -1,0 +1,39 @@
+.c-header {
+  padding: rem(20px) 0;
+
+  .o-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+  .c-header__image {
+    width: rem(100px);
+    border-radius: 50%;
+
+    @include mq($from: landscape) {
+      width: rem(150px);
+    }
+  }
+
+  .c-header__title {
+    font-size: rem(20px);
+    line-height: 1;
+    margin: 0 0 0 rem(10px);
+
+    @include mq($from: landscape) {
+      font-size: rem(28px);
+      margin-left: rem(20px);
+    }
+
+    @include mq($from: tablet) {
+      font-size: rem(34px);
+    }
+  }
+
+    .c-header__job {
+      display: block;
+      color: $color--grey;
+      font-size: .75em;
+    }

@@ -1,5 +1,9 @@
 .c-header {
-  padding: rem(20px) 0;
+  padding: rem(24px) 0;
+
+  @include mq($from: tablet) {
+    padding-top: rem(36px);
+  }
 
   .o-wrapper {
     display: flex;

@@ -11,13 +11,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^9.5.1",
+    "autoprefixer": "^9.8.6",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.3"
+    "sass": "^1.26.11"
   },
   "dependencies": {
     "assets": "^3.0.1",
     "normalize-scss": "^7.0.1",
-    "sass-mq": "^5.0.0"
+    "sass-mq": "^5.0.1"
   }
 }

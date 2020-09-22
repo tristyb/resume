@@ -7,8 +7,8 @@
 
   .o-wrapper {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
   }
 }
 
@@ -22,13 +22,13 @@
   }
 
   .c-header__title {
+    margin: 0 0 0 rem(10px);
     font-size: rem(20px);
     line-height: 1;
-    margin: 0 0 0 rem(10px);
 
     @include mq($from: landscape) {
-      font-size: rem(28px);
       margin-left: rem(20px);
+      font-size: rem(28px);
     }
 
     @include mq($from: tablet) {
@@ -38,6 +38,7 @@
 
     .c-header__job {
       display: block;
-      color: $color--grey;
+      color: $color--sub;
       font-size: .75em;
+      font-weight: 400;
     }

@@ -3,8 +3,8 @@
   .c-skills__title {}
 
   .c-skills__subtitle {
-    font-size: rem(20px);
     margin-top: 1.25em;
+    font-size: rem(20px);
 
     @include mq($from: tablet) {
       font-size: rem(24px);
@@ -12,11 +12,11 @@
   }
 
   .c-skills__list {
-    list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     columns: 2;
     column-gap: rem(10px);
+    list-style-type: none;
 
     @include mq($from: tablet) {
       columns: 3;
@@ -24,9 +24,9 @@
   }
 
     .c-skills__skill {
-      font-size: rem(16px);
       width: 90%;
-      margin-bottom: .875em;
+      margin-bottom: .5em;
+      font-size: rem(16px);
 
       @include mq($from: tablet) {
         font-size: rem(18px);

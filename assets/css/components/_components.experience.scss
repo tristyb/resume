@@ -9,8 +9,8 @@
   }
 
     .c-experience__job__title {
-      color: $color--text;
       margin-bottom: rem(6px);
+      color: $color--text;
 
       @include mq($from: tablet) {
         font-size: rem(22px);
@@ -19,6 +19,7 @@
 
     .c-experience__job__company {
       font-size: .75em;
+      font-weight: 400;
 
       @include mq($until: desktop) {
         display: block;
@@ -27,8 +28,8 @@
     }
 
     .c-experience__job__timescale {
-      color: $color--grey;
       margin: 0;
+      color: $color--sub;
       font-size: rem(14px);
 
       @include mq($from: tablet) {

@@ -1,9 +1,9 @@
 .c-contact {
   @include mq($from: tablet) {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -23,8 +23,8 @@
     .c-contact__tel,
     .c-contact__website,
     .c-contact__linkedin {
-      font-size: rem(16px);
       margin: rem(10px) 0 0;
+      font-size: rem(16px);
 
       @include mq($from: tablet) {
         font-size: rem(18px);
@@ -43,9 +43,5 @@
         &:hover,
         &:focus {
           text-decoration: underline;
-        }
-
-        &:visited {
-          color: $color--grey;
         }
       }

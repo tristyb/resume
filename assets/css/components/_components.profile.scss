@@ -3,17 +3,17 @@
   .c-profile__title {}
 
   .c-profile__text {
+    max-width: rem(600px);
     font-size: rem(16px);
     hyphens: manual;
-    max-width: rem(600px);
 
     @include mq($from: tablet) {
       font-size: rem(18px);
     }
 
     &--lede {
+      color: $color--sub;
       font-size: rem(20px);
-      color: $color--grey;
 
       @include mq($from: tablet) {
         font-size: rem(24px);

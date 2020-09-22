@@ -9,10 +9,10 @@
     bottom: rem(3px);
     left: rem(-2px);
     transform-origin: 0 50%;
-    color: $color--secondary;
+    opacity: .1;
+    color: $color--sub;
     font-size: 2em;
     font-weight: 700;
-    filter: saturate(.4) brightness(1.2);
   }
 
   &::after {

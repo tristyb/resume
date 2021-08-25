@@ -5,6 +5,8 @@
 
 // Convert any px value into its rem equivalent.
 
+@use "sass:math";
+
 @function rem($value) {
 
   @if (type-of($value) == number) {
@@ -17,7 +19,7 @@
     @error '`#{$value}` needs to be a number.';
   }
 
-  @return $value / 16px * 1rem;
+  @return math.div($value, 16px) * 1rem;
 
 }
 

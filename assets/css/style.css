@@ -4,6 +4,7 @@
 	--font-main: Quattrocento, serif;
 
 	--color-brand: #0f60d8;
+	--color-subtle: #a0a4aa;
 
   --step--2: clamp(0.6944rem, 0.6859rem + 0.0426vi, 0.72rem);
   --step--1: clamp(0.8333rem, 0.8111rem + 0.1111vi, 0.9rem);
@@ -34,6 +35,7 @@ html {}
 body {
 	font-family: var(--font-main);
 	font-weight: 400;
+	color: #111;
 	font-size: 1rem;
 	font-optical-sizing: auto;
 }
@@ -50,7 +52,101 @@ body {
   margin-inline: auto;
 }
 
-.u-grid {
-  display: grid;
-  gap: var(--grid-gutter);
+.u-push {
+	margin-block-start: var(--space-l);
 }
+
+.u-push--big {
+	margin-block-start: var(--space-2xl);
+}
+
+.u-section-title {
+	font-size: var(--step-3);
+	position: relative;
+	font-family: var(--font-title);
+	font-weight: 900;
+	color: var(--color-brand);
+	margin-block-end: var(--space-l);
+
+	&::before {
+		inset-block-end: -0.05em;
+    color: var(--color-subtle);
+    content: attr(data-before);
+    font-size: var(--step-5);
+    inset-inline-start: -.125rem;
+    opacity: .1;
+    position: absolute;
+    z-index: -1;
+	}
+
+	&::after {
+		background-color: var(--color-subtle);
+    content: "";
+    display: block;
+		opacity: .2;
+    height: 0.0625rem;
+    margin-block-start: var(--space-3xs);
+	}
+}
+
+.header {
+	padding-block: var(--space-xl);
+
+	.u-container {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-m) var(--space-s);
+
+		@media (width >= 35em) {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+}
+
+.header__image {
+	width: 100%;
+	max-width: 18.75rem;
+	border-radius: var(--space-m);
+
+	@media (width < 35em) {
+		margin-inline: auto;
+	}
+
+	@media (width >= 35em) {
+		max-width: 12rem;
+	}
+}
+
+.header__title {
+	text-align: center;
+	line-height: 1.1;
+	font-family: var(--font-title);
+	font-weight: 900;
+	color: var(--color-brand);
+	text-wrap: balance;
+	font-size: var(--step-5);
+
+	@media (width >= 35em) {
+		text-align: start;
+	}
+}
+
+.header__job {
+	display: block;
+	font-size: var(--step-2);
+	color: var(--color-subtle);
+	font-weight: 400;
+
+	@media (width >= 35em) {
+		padding-inline-start: var(--space-2xs);
+	}
+}
+
+.profile {}
+
+.profile__title {}
+
+.profile__text {}
+
+.profile__text--lede {}
